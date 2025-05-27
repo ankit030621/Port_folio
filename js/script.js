@@ -59,19 +59,19 @@ $(document).ready(function () {
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Portfolio | Akash Kumar";
-            $("#favicon").attr("href", "E:\Portfolio-Website-main\assets\images\favicon.png");
+            document.title = "Portfolio | codewithanku";
+            $("#favicon").attr("href", "E:\Portfolio-Website-main\images\favicon.png");
         }
         else {
             document.title = "Come Back To Portfolio";
-            $("#favicon").attr("href", "E:\Portfolio-Website-main\assets\images\favhand.png");
+            $("#favicon").attr("href", "E:\Portfolio-Website-main\images\favhand.png");
         }
     });
 
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["frontend development", "backend development", "web designing", "android development", "web development"],
+    strings: ["Frontend Development", "Backend Development",  "MERN Stack Development", "Full Stack Development", "Data Structures and Algorithms", "Software Development"],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
@@ -84,7 +84,7 @@ async function fetchData(type = "skills") {
     type === "skills" ?
         response = await fetch("skills.json")
         :
-        response = await fetch("E:\Portfolio-Website-main\assets\images\projects")
+        response = await fetch("E:\Portfolio-Website-main\images\projects")
     const data = await response.json();
     return data;
 }
@@ -128,7 +128,7 @@ function showProjects(projects) {
     projectsContainer.innerHTML = projectHTML;
 
     // <!-- tilt js effect starts -->
-    VanillaTilt.init(document.querySelectorAll(".tilt"), {
+    VanillaTilt.init(document.querySelectorAll(".title"), {
         max: 15,
     });
     // <!-- tilt js effect ends -->

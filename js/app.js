@@ -117,7 +117,7 @@ particlesJS('particles-js',
         "remove": {
           "particles_nb": 2
         }
-      }
+      } 
     },
     "retina_detect": true,
     "config_demo": {
