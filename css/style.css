@@ -203,7 +203,7 @@ header .navbar ul li a:hover {
   width: 100%;
 }
 .home .content {
-  flex: 1 1 40rem;
+  flex: 1 1 35rem;
   padding-top: 1rem;
   z-index: 1;
 }
